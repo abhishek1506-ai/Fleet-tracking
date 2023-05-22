@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Quality Monitoring Solution</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+
+    <link rel="stylesheet" href="../../dist/css/adminlte.css">
+    <link rel="stylesheet" href="../../dist/css/customcss.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light ">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav align-items-center cstmtophead">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="text-center foodTop"> FOOD MONITORING SOLUTION</li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">5</span>
+                    </a>
+                </li>
+
+                <li class="dropdown user user-menu mr-3">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: rgba(0, 0, 0, 0.5);">
+                        <img src="../../dist/img/user1.jpg" class="user-image float-none mt-0" alt="User Image">
+                        <span class="hidden-xs">Welcome Matt Prior</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- User image -->
+                        <li class="user-header">
+                            <img src="../../dist/img/user1.jpg" class="img-circle" alt="User Image">
+
+                            <p>
+                                Matt Prior
+                                <small>Warehouse Manager</small>
+                            </p>
+                        </li>
+                        <li class="user-footer">
+                            <div class="pull-right float-right">
+                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="#" class="brand-link  bg-white">
+                <img src="https://d3tj4wnms16o5e.cloudfront.net/s3fs-public/kellton-logo%20%281%29_0_0.png"
+                    alt="AdminLTE Logo" class="brand-image float-none">
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../../dist/img/user1.jpg" class="img-circle elevation-2" style="padding-top: 3px;" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Matt prior</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-warehouse"></i>
+                                <p>
+                                    Warehouses
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-plus nav-icon"></i>
+                                        <p>Add Warehouse</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-minus nav-icon"></i>
+                                        <p>Remove Warehouse</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-chart-line"></i>
+                                <p>
+                                    Sensors
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-plus nav-icon"></i>
+                                        <p>Connect Device</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-minus nav-icon"></i>
+                                        <p>Disconnect Device</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-times nav-icon"></i>
+                                        <p>Troubleshoot</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-bell"></i>
+                                <p>
+                                    Set Alerts
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Temperature Limit</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Moisture Limit</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Humidity Limit</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Freshness Thresold</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div class="container-fluid pb-0 content-header fruitsMain">
+                <div class="topHead">
+                    <ul class="d-flex justify-content-xl-between flex-wrap mt-2 pl-2 mb-0 ">
+                        <li>
+                            <p>Category</p>
+                            <select onchange="getPage(this.value)" class="cstmSelect">
+                                <option value="1">Fruits & Vegetables</option>
+                                <option value="2">Meat</option></a>
+                            </select>
+                        </li>
+                        <li>
+                            <p>Total Warehouse</p>
+                            <p>6</p>
+                        </li>
+                        <li>
+                            <p>Average Freshness</p>
+                            <p>95%</p>
+                        </li>
+                        <li>
+                            <p>Total Weight</p>
+                            <p>6080 lbs</p>
+                        </li>
+                        <li>
+                            <p>Average Wastage</p>
+                            <p>150 lbs/month</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+            <!-- custom-section start-->
+            <div class="wareshouseMain ml-3 mr-4 mb-3">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-3">
+                        <p>Select Warehouse</p>
+                        <select class="cstmSelect" style="font-size: 18px;" onchange="getIncidents(this.value)"
+                            id="warehouses">
+                            <option value="Swanley366">Swanley366</option>
+                            <option value="Lewisham">Lewisham</option>
+                            <option value="Bexley">Bexley</option>
+                            <option value="Ilford82">Ilford82</option>
+                            <option value="Hackney">Hackney</option>
+                            <option value="Dartford">Dartford</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-wrap justify-content-md-end align-items-center pr-4">
+                            <p class=" mb-3 ">Total Incidents</p>
+                            <input class="incidentno cstmSelect  mb-3" type="text" name="incidents" value="15"
+                                id="incidents">
+                            <select class="cstmSelect lyears  mb-3" onchange="getTimeline(this.value)" id="timeline">
+                                <option value="Lastweek">Lastweek</option>
+                                <option value="Lastmonth">Lastmonth</option>
+                                <option value="Lastyear">Lastyear</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- custom-section end-->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-danger">
+                                <div class="card-body">
+                                    <div class="chartwrap">
+                                        <div class="donutleftbar">
+                                            <div class="settext">Inventory </div>
+                                            <canvas id="DonutChart"
+                                                style="min-height: 250px;height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <div class="card card-info d-none">
+                            </div>
+                            <div class="card card-success ">
+                                <div class="card-body">
+                                    <div class="chart">
+                                        <div class="settext">Freshness</div>
+                                        <canvas id="barChart"
+                                            style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card card-info d-none">
+                            </div>
+                            <div class="card card-success">
+                                <div class="card-body">
+                                    <div class="chart">
+                                        <div class="settext">Wastage</div>
+                                        <canvas id="lineChart"
+                                            style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Temperature Incidents and Responsive Guages-->
+            <section class="content">
+                <div class="container-fluid pb-5">
+                    <div class="row">
+                        <!--Incidents-->
+                        <div class="col-lg-3">
+                            <div class="card fruitincidents ">
+                                <div class="card-body">
+                                    <div class="settext">Incidents</div>
+                                    <ul>
+                                        <li>Temperature of warehouse exceeded 38F</li>
+                                        <li>Minimum limit of apples reached. Replenish Inventory</li>
+                                        <li>Ambient Moisture beyond Thresold</li>
+                                        <li>Rotten percentage of kiwi exceed limit</li>
+                                        <li>Ambient Moisture beyond Thresold</li>
+                                        <li>Rotten percentage of kiwi exceed limit</li>
+                                        <li>Ambient Moisture beyond Thresold</li>
+                                        <li>Rotten percentage of kiwi exceed limit</li>
+                                        <li>Ambient Moisture beyond Thresold</li>
+                                        <li>Rotten percentage of kiwi exceed limit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Responsive Guages-->
+                        <div class="col-lg-9 temwrapper">
+                            <div class="settext">Live Data</div>
+                            <div class="row">
+                                <div class="col-md-4 pb-0">
+                                    <div class="card-body pb-0">
+                                        <div class="setguage">Temperature</div>
+                                        <div id="g1" class="gauge"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-0">
+                                    <div class="card-body pb-0">
+                                        <div class="setguage">Moisture</div>
+                                        <div id="g2" class="gauge"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 pb-0">
+                                    <div class="card-body pb-0">
+                                        <div class="setguage">Air Quality</div>
+                                        <div id="g3" class="gauge"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.1.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer> -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Add Content Here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!--For responsive guages-->
+    <script src="../raphael-2.1.4.min.js"></script>
+    <script src="../justgage.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../../plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <!-- Page specific script -->
+    <script>
+        function getPage(type) {
+            if (type == 2) {
+                location.href = "./meat.html";
+            }
+        }
+        var inventory = [{
+            "name": "Swanley366",
+            "Apple": 300,
+            "Banana": 565,
+            "kiwi": 245,
+            "Tomato": 0,
+            "Melons": 0,
+            "BellPeppers": 0
+        }, {
+            "name": "Lewisham",
+            "Apple": 0,
+            "Banana": 674,
+            "kiwi": 0,
+            "Tomato": 0,
+            "Melons": 330,
+            "BellPeppers": 0
+        }, {
+            "name": "Bexley",
+            "Apple": 0,
+            "Banana": 0,
+            "kiwi": 0,
+            "Tomato": 535,
+            "Melons": 330,
+            "BellPeppers": 150
+        }, {
+            "name": "Ilford82",
+            "Apple": 348,
+            "Banana": 609,
+            "kiwi": 0,
+            "Tomato": 0,
+            "Melons": 0,
+            "BellPeppers": 0
+        }, {
+            "name": "Hackney",
+            "Apple": 0,
+            "Banana": 0,
+            "kiwi": 452,
+            "Tomato": 550,
+            "Melons": 0,
+            "BellPeppers": 103
+        }, {
+            "name": "Dartford",
+            "Apple": 387,
+            "Banana": 0,
+            "kiwi": 0,
+            "Tomato": 0,
+            "Melons": 375,
+            "BellPeppers": 127
+        }]
+
+
+        var warehouses = [{
+            "name": "Swanley366",
+            "Lastweek": 15,
+            "Lastmonth": 36,
+            "Lastyear": 259
+        }, {
+            "name": "Lewisham",
+            "Lastweek": 9,
+            "Lastmonth": 54,
+            "Lastyear": 361
+        }, {
+            "name": "Bexley",
+            "Lastweek": 18,
+            "Lastmonth": 32,
+            "Lastyear": 339
+        }, {
+            "name": "Ilford82",
+            "Lastweek": 6,
+            "Lastmonth": 58,
+            "Lastyear": 572
+        }, {
+            "name": "Hackney",
+            "Lastweek": 9,
+            "Lastmonth": 21,
+            "Lastyear": 486
+        }, {
+            "name": "Dartford",
+            "Lastweek": 14,
+            "Lastmonth": 85,
+            "Lastyear": 260
+        }]
+
+        var wastages = [{
+            "name": "Swanley366",
+            "Month1": "156",
+            "Month2": "122",
+            "Month3": "133",
+            "Month4": "138",
+            "Month5": "137",
+            "Month6": "128"
+        }, {
+            "name": "Lewisham",
+            "Month1": "143",
+            "Month2": "167",
+            "Month3": "167",
+            "Month4": "152",
+            "Month5": "161",
+            "Month6": "169"
+        }, {
+            "name": "Bexley",
+            "Month1": "132",
+            "Month2": "120",
+            "Month3": "165",
+            "Month4": "142",
+            "Month5": "132",
+            "Month6": "162"
+        }, {
+            "name": "Ilford82",
+            "Month1": "143",
+            "Month2": "133",
+            "Month3": "166",
+            "Month4": "159",
+            "Month5": "122",
+            "Month6": "134"
+        }, {
+            "name": "Hackney",
+            "Month1": "142",
+            "Month2": "144",
+            "Month3": "199",
+            "Month4": "172",
+            "Month5": "173",
+            "Month6": "126"
+        }, {
+            "name": "Dartford",
+            "Month1": "184",
+            "Month2": "164",
+            "Month3": "134",
+            "Month4": "146",
+            "Month5": "185",
+            "Month6": "137"
+        }]
+        var freshness = [{
+            "warehouse": "Swanley366",
+            "Data": [{
+                "fruit": "Apple",
+                "raw": 30,
+                "ripe": 65,
+                "rotten": 5
+            }, {
+                "fruit": "Banana",
+                "raw": 28,
+                "ripe": 70,
+                "rotten": 2
+            }, {
+                "fruit": "Kiwi",
+                "raw": 21,
+                "ripe": 70,
+                "rotten": 9
+            }, {
+                "fruit": "Tomato",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Melons",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "BellPeppers",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }]
+        }, {
+            "warehouse": "Lewisham",
+            "Data": [{
+                "fruit": "Apple",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Banana",
+                "raw": 30,
+                "ripe": 65,
+                "rotten": 5
+            }, {
+                "fruit": "Kiwi",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Tomato",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Melons",
+                "raw": 28,
+                "ripe": 70,
+                "rotten": 2
+            }, {
+                "fruit": "BellPeppers",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }]
+        }, {
+            "warehouse": "Bexley",
+            "Data": [{
+                "fruit": "Apple",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Banana",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Kiwi",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Tomato",
+                "raw": 30,
+                "ripe": 65,
+                "rotten": 5
+            }, {
+                "fruit": "Melons",
+                "raw": 25,
+                "ripe": 72,
+                "rotten": 3
+            }, {
+                "fruit": "BellPeppers",
+                "raw": 28,
+                "ripe": 70,
+                "rotten": 2
+            }]
+        }, {
+            "warehouse": "Ilford82",
+            "Data": [{
+                "fruit": "Apple",
+                "raw": 25,
+                "ripe": 72,
+                "rotten": 3
+            }, {
+                "fruit": "Banana",
+                "raw": 28,
+                "ripe": 70,
+                "rotten": 2
+            }, {
+                "fruit": "Kiwi",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Tomato",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Melons",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "BellPeppers",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }]
+        }, {
+            "warehouse": "Hackney",
+            "Data": [{
+                "fruit": "Apple",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Banana",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Kiwi",
+                "raw": 30,
+                "ripe": 65,
+                "rotten": 5
+            }, {
+                "fruit": "Tomato",
+                "raw": 28,
+                "ripe": 70,
+                "rotten": 2
+            }, {
+                "fruit": "Melons",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "BellPeppers",
+                "raw": 25,
+                "ripe": 72,
+                "rotten": 3
+            }]
+        }, {
+            "warehouse": "Dartford",
+            "Data": [{
+                "fruit": "Apple",
+                "raw": 28,
+                "ripe": 70,
+                "rotten": 2
+            }, {
+                "fruit": "Banana",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Kiwi",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }, {
+                "fruit": "Tomato",
+                "raw": 31,
+                "ripe": 68,
+                "rotten": 1
+            }, {
+                "fruit": "Melons",
+                "raw": 25,
+                "ripe": 72,
+                "rotten": 3
+            }, {
+                "fruit": "BellPeppers",
+                "raw": 0,
+                "ripe": 0,
+                "rotten": 0
+            }]
+        }]
+
+        var moistureData = [{
+            "warehouse": "Swanley366",
+            "moisture": 95,
+        }, {
+            "warehouse": "Lewisham",
+            "moisture": 90,
+        }, {
+            "warehouse": "Bexley",
+            "moisture": 98,
+        }, {
+            "warehouse": "Ilford82",
+            "moisture": 93,
+        }, {
+            "warehouse": "Hackney",
+            "moisture": 92,
+        }, {
+            "warehouse": "Dartford",
+            "moisture": 91,
+        }]
+
+        function accelerate() {
+            accelerating = false;
+            window.setTimeout(function () {
+                change_gauge()
+            }, 5000);
+            window.setTimeout(function () {
+                change_gauge()
+            }, 10000);
+            window.setTimeout(function () {
+                change_gauge()
+            }, 15000);
+            window.setTimeout(function () {
+                change_gauge()
+            }, 20000);
+            window.setTimeout(function () {
+                change_gauge()
+            }, 25000);
+            window.setTimeout(function () {
+                change_gauge()
+            }, 30000);
+        }
+        function accelerateTemperature() {
+            acceleratingTemperature = false;
+            window.setTimeout(function () {
+                change_temperature()
+            }, 1000);
+        }
+        function change_gauge() {
+            g2.refresh(getRandomInt(90, 99));
+            g3.refresh(getRandomInt(20, 30));
+
+        }
+        function change_temperature() {
+            g1.refresh(getRandomInt(30, 40))
+        }
+
+
+        function getTimeline(y) {
+            for (i = 0; i < warehouses.length; i++) {
+                if (y == "Lastweek") {
+                    if (document.getElementById("warehouses").value == warehouses[i].name) {
+                        $('#incidents').val(warehouses[i].Lastweek);
+                    }
+                } else if (y == "Lastmonth") {
+                    if (document.getElementById("warehouses").value == warehouses[i].name) {
+                        $('#incidents').val(warehouses[i].Lastmonth);
+                    }
+                } else {
+                    if (document.getElementById("warehouses").value == warehouses[i].name) {
+                        $('#incidents').val(warehouses[i].Lastyear);
+                    }
+                }
+            }
+        }
+
+        function getIncidents(x) {
+            //To get the number of incidents for warehouses
+            for (i = 0; i < warehouses.length; i++) {
+                if (x == warehouses[i].name) {
+                    if (document.getElementById("timeline").value == "Lastweek") {
+                        $('#incidents').val(warehouses[i].Lastweek);
+                    } else if (document.getElementById("timeline").value == "Lastmonth") {
+                        $('#incidents').val(warehouses[i].Lastmonth);
+                    } else {
+                        $('#incidents').val(warehouses[i].Lastyear);
+                    }
+
+                }
+            }
+            //To get the inventory details of each warehouse
+            for (j = 0; j < inventory.length; j++) {
+                if (x == inventory[j].name) {
+                    inventoryData = [];
+                    donutLabelData = [];
+                    if (inventory[j].Apple == 0) {
+                        null;
+                    }
+                    else {
+                        inventoryData.push(inventory[j].Apple);
+                        donutLabelData.push("Apple")
+                    }
+                    if (inventory[j].Banana == 0) {
+                        null;
+                    }
+                    else {
+                        inventoryData.push(inventory[j].Banana);
+                        donutLabelData.push("Banana")
+                    }
+                    if (inventory[j].kiwi == 0) {
+                        null;
+                    }
+                    else {
+                        inventoryData.push(inventory[j].kiwi);
+                        donutLabelData.push("Kiwi")
+                    }
+                    if (inventory[j].Tomato == 0) {
+                        null;
+                    }
+                    else {
+                        inventoryData.push(inventory[j].Tomato);
+                        donutLabelData.push("Tomato")
+                    }
+                    if (inventory[j].Melons == 0) {
+                        null;
+                    }
+                    else {
+                        inventoryData.push(inventory[j].Melons);
+                        donutLabelData.push("Melons")
+                    }
+                    if (inventory[j].BellPeppers == 0) {
+                        null;
+                    }
+                    else {
+                        inventoryData.push(inventory[j].BellPeppers);
+                        donutLabelData.push("BellPeppers")
+                    }
+                }
+            }
+
+            //-------------
+            //- DONUT CHART -
+            //-------------
+            // Get context with jQuery - using jQuery's .get() method.
+            var donutChartCanvas = $('#DonutChart').get(0).getContext('2d')
+            var donutData = {
+                labels: donutLabelData,
+                datasets: [
+
+                    {
+                        data: inventoryData,
+                        backgroundColor: ['rgba(196, 75, 75,0.9)', '#4e8fb8', 'rgba(15, 115, 25,0.9)'],
+                    }
+                ]
+            }
+            donutchart.data.datasets = donutData.datasets;
+            donutchart.data.labels = donutData.labels;
+            donutchart.update();
+
+            for (k = 0; k < wastages.length; k++) {
+                if (x == wastages[k].name) {
+                    wastagesData = [];
+                    warehouseName = '';
+                    warehouseName = wastages[k].name;
+                    wastagesData.push(wastages[k].Month1)
+                    wastagesData.push(wastages[k].Month2)
+                    wastagesData.push(wastages[k].Month3)
+                    wastagesData.push(wastages[k].Month4)
+                    wastagesData.push(wastages[k].Month5)
+                    wastagesData.push(wastages[k].Month6)
+                }
+            }
+
+            var areaChartData1 = {
+                labels: ['December', 'January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: warehouseName,
+                    borderColor: '#4e8fb8',
+                    lineTension: 0,
+                    pointColor: '#3b8bba',
+                    fill: false,
+                    pointStrokeColor: 'rgba(225,225,225,1)',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(225,225,225,1)',
+                    data: wastagesData
+                }]
+            }
+            var areaChartOptions1 = {
+                maintainAspectRatio: true,
+                responsive: false,
+                datasetFill: false,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: true,
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: true,
+                        },
+                        ticks: {
+                            fontColor: "#445054", // this here
+                            beginAtZero: true,
+                        },
+                    }]
+                }
+            }
+            lineChart.data.datasets = areaChartData1.datasets;
+            lineChart.data.labels = areaChartData1.labels;
+            lineChart.update();
+
+            //-------------
+            //- Line chart -
+            //-------------
+
+            for (f = 0; f < freshness.length; f++) {
+                if (x == freshness[f].warehouse) {
+                    var rawData = [];
+                    var ripeData = [];
+                    var rottenData = [];
+                    var barLabelData = [];
+                    for (p = 0; p < 6; p++) {
+                        if (freshness[f].Data[p].raw != 0) {
+                            barLabelData.push(freshness[f].Data[p].fruit)
+                            rawData.push(freshness[f].Data[p].raw);
+                            ripeData.push(freshness[f].Data[p].ripe)
+                            rottenData.push(freshness[f].Data[p].rotten)
+                        }
+                    }
+                }
+            }
+            var freshnessData = {
+                labels: barLabelData,
+                datasets: [{
+                    label: 'Raw',
+                    backgroundColor: 'rgba(196, 75, 75,0.9)',
+                    borderColor: 'rgba(60,141,188,0.8)',
+                    pointRadius: false,
+                    pointColor: '#3b8bba',
+                    pointStrokeColor: 'rgba(60,141,188,1)',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: rawData
+                }, {
+                    label: 'Ripe',
+                    backgroundColor: '#4e8fb8',
+                    borderColor: 'rgba(217, 92, 50, 1)',
+                    pointRadius: false,
+                    pointColor: 'rgba(217, 92, 50, 1)',
+                    pointStrokeColor: '#c1c7d1',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(217, 92, 50,1)',
+                    data: ripeData
+                }, {
+                    label: 'Rotten',
+                    backgroundColor: 'rgba(15, 115, 25,0.9)',
+                    borderColor: 'rgba(60,141,188,0.8)',
+                    pointRadius: false,
+                    pointColor: '#3b8bba',
+                    pointStrokeColor: 'rgba(60,141,188,1)',
+                    pointHighlightFill: '#fff',
+                    pointHighlightStroke: 'rgba(60,141,188,1)',
+                    data: rottenData
+                },]
+            }
+
+            var freshnessOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: false,
+                        }
+                    }]
+                }
+            }
+            barchart.data.datasets = freshnessData.datasets;
+            barchart.data.labels = freshnessData.labels;
+            barchart.update();
+
+
+        }
+        /* ChartJS
+         * -------
+         * Here we will create a few charts using ChartJS
+         */
+
+        //--------------
+        //- AREA CHART -
+        //--------------
+
+        // Get context with jQuery - using jQuery's .get() method.
+        accelerate();
+        window.setInterval(function () {
+            if (!accelerating) {
+                accelerating = true;
+                accelerate();
+            }
+        }, 31000);
+        accelerateTemperature();
+        window.setInterval(function () {
+            if (!acceleratingTemperature) {
+                acceleratingTemperature = true;
+                accelerateTemperature();
+            }
+        }, 2000);
+        var areaChartData = {
+            labels: ['Apple', 'Banana', 'Kiwi'],
+            datasets: [{
+                label: 'Raw',
+                backgroundColor: 'rgba(196, 75, 75,0.9)',
+                borderColor: 'rgba(60,141,188,0.8)',
+                pointRadius: false,
+                pointColor: '#3b8bba',
+                pointStrokeColor: 'rgba(60,141,188,1)',
+                pointHighlightFill: '#fff',
+                pointHighlightStroke: 'rgba(60,141,188,1)',
+                data: [30, 28, 21]
+            }, {
+                label: 'Ripe',
+                backgroundColor: '#4e8fb8',
+                borderColor: 'rgba(217, 92, 50, 1)',
+                pointRadius: false,
+                pointColor: 'rgba(217, 92, 50, 1)',
+                pointStrokeColor: '#c1c7d1',
+                pointHighlightFill: '#fff',
+                pointHighlightStroke: 'rgba(217, 92, 50,1)',
+                data: [65, 70, 70]
+            }, {
+                label: 'Rotten',
+                backgroundColor: 'rgba(15, 115, 25,0.9)',
+                borderColor: 'rgba(60,141,188,0.8)',
+                pointRadius: false,
+                pointColor: '#3b8bba',
+                pointStrokeColor: 'rgba(60,141,188,1)',
+                pointHighlightFill: '#fff',
+                pointHighlightStroke: 'rgba(60,141,188,1)',
+                data: [5, 2, 9]
+            },]
+        }
+
+        var areaChartOptions = {
+            maintainAspectRatio: false,
+            responsive: true,
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false,
+                    }
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display: false,
+                    }
+                }]
+            }
+        }
+
+
+
+
+        //----------
+        //-DONOT CHART
+        //------------
+        var donutChartCanvas = $('#DonutChart').get(0).getContext('2d')
+        var donutData = {
+            labels: [
+                'Apple',
+                'Banana',
+                'Kiwi'
+            ],
+            datasets: [{
+                data: [300, 565, 245],
+                backgroundColor: ['rgba(196, 75, 75,0.9)', '#4e8fb8', 'rgba(15, 115, 25,0.9)'],
+            }]
+        }
+        var donutOptions = {
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        var i = tooltipItems.index;
+                        return data.labels[i] + ": " + data.datasets[0].data[i] + " lbs";
+                    }
+                }
+            },
+            maintainAspectRatio: false,
+            responsive: true,
+            legend: {
+                display: true,
+                labels: {
+                    fontSize: 14
+                }
+            }
+        }
+        //Create pie or douhnut chart
+        // You can switch between pie and douhnut using the method below.
+        var donutchart = new Chart(donutChartCanvas, {
+            type: 'doughnut',
+            data: donutData,
+            options: donutOptions
+        })
+
+
+        //-----------------
+        //-Reponsive chart1
+        //-----------------
+        var g1 = new JustGage({
+            id: 'g1',
+            value: 35,
+            min: 0,
+            max: 50,
+            symbol: 'F',
+            pointer: true,
+            gaugeWidthScale: 0.6,
+            customSectors: [{
+                color: '#ff0000',
+                lo: 38,
+                hi: 50
+            }, {
+                color: '#4e8fb8',
+                lo: 0,
+                hi: 37
+            }],
+            counter: true
+        });
+        //-----------------
+        //-Reponsive chart2
+        //-----------------
+        var g2 = new JustGage({
+            id: 'g2',
+            value: 95,
+            min: 0,
+            max: 100,
+            symbol: '%',
+            pointer: true,
+            gaugeWidthScale: 0.6,
+            customSectors: [{
+                color: '#ff0000',
+                lo: 95,
+                hi: 100
+            }, {
+                color: '#4e8fb8',
+                lo: 0,
+                hi: 95
+            }],
+            counter: true
+        });
+        //-----------------
+        //-Reponsive chart3
+        //-----------------
+        var g3 = new JustGage({
+            id: 'g3',
+            value: 20,
+            min: 0,
+            max: 30,
+            symbol: 'ppm',
+            pointer: true,
+            gaugeWidthScale: 0.6,
+            customSectors: [{
+                color: '#4e8fb8',
+                lo: 0,
+                hi: 24
+            }, {
+                color: '#ff0000',
+                lo: 25,
+                hi: 30
+            }],
+            counter: true
+        });
+
+        //-------------
+        //- BAR CHART -
+        //-------------
+        var barChartCanvas = $('#barChart').get(0).getContext('2d')
+        var barChartData = $.extend(true, {}, areaChartData)
+        var temp0 = areaChartData.datasets[0]
+        var temp1 = areaChartData.datasets[1]
+        barChartData.datasets[0] = temp1
+        barChartData.datasets[1] = temp0
+
+        var barChartOptions = {
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return tooltipItems.yLabel + '%';
+                    }
+                }
+            },
+            responsive: true,
+            legend: {
+                display: true,
+                labels: {
+                    fontSize: 14
+                }
+            },
+            maintainAspectRatio: false,
+            datasetFill: false,
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        fontSize: 14
+                    }
+                }]
+            }
+
+        }
+
+        var barchart = new Chart(barChartCanvas, {
+            type: 'bar',
+            data: barChartData,
+            options: barChartOptions
+        })
+        //-------------
+        //- AREA CHART DATA1 -
+        //-------------
+        var areaChartData1 = {
+            labels: ['December', 'January', 'February', 'March', 'April', 'May'],
+            datasets: [{
+                label: 'Swanley366',
+                lineTension: 0,
+                borderColor: '#4e8fb8',
+                pointColor: '#3b8bba',
+                fill: false,
+                pointStrokeColor: 'rgba(225,225,225,1)',
+                pointHighlightFill: '#fff',
+                pointHighlightStroke: 'rgba(225,225,225,1)',
+                data: [156, 122, 133, 138, 137, 128]
+            }]
+        }
+        var areaChartOptions1 = {
+            tooltips: {
+                enabled: true,
+                mode: 'single',
+                callbacks: {
+                    label: function (tooltipItems, data) {
+                        return tooltipItems.yLabel + ' lbs';
+                    }
+                }
+            },
+            maintainAspectRatio: false,
+            responsive: true,
+
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: true,
+                    },
+                    ticks: {
+                        fontSize: 14
+                    }
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display: true,
+                    },
+                    ticks: {
+                        fontColor: "#445054", // this here
+                        beginAtZero: true,
+
+                    }
+                }]
+            }
+        }
+
+        //-------------
+        //- BAR CHART1 -
+        //-------------
+        var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+        var lineChartOptions = $.extend(true, {}, areaChartOptions1)
+        var lineChartData = $.extend(true, {}, areaChartData1)
+
+        var lineChart = new Chart(lineChartCanvas, {
+            type: 'line',
+            data: lineChartData,
+            options: lineChartOptions
+        })
+    </script>
+</body>
+
+</html>

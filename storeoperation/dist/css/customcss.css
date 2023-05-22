@@ -1,0 +1,201 @@
+.cstmtophead {
+    width: 100%;
+}
+
+.cstmSelect {
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #737373;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    font-size:18px;
+}
+.settext {
+  background-color: #60abca!important;
+    color: #fff;
+    font-size: 23px;
+}
+.customer .topHead ul li {
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    background: #ffffff;
+    flex-grow: 1;
+    list-style: none;
+    margin-right: 15px;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 18px;
+    color: #737373;
+    font-weight: 600;
+    width: 45%;
+    min-width: 215px;
+}
+
+.customer .topHead ul li a {
+  display: block;
+  color:#767171;
+  padding: 15px 30px;
+}
+.customer .topHead ul li:nth-child(even){
+  border-radius: 25px;
+  background-color: #4472c4;
+  color:#fff;
+  padding: 15px 30px;
+}
+.customer .topHead ul li:nth-child(odd){
+  background-color: #ed7d31;
+  color:#767171;
+  border:8px solid transparent;
+}
+.customer .topHead ul li:nth-child(odd):hover{
+  border-color: #873e0d;
+}
+
+.customer .topHead ul:nth-child(even) li:nth-child(odd){
+  background-color: #70ad47;
+  color:#000000;
+  border:8px solid transparent;
+}
+.customer .topHead ul:nth-child(even) li:nth-child(odd):hover{
+  border-color: #385723;
+}
+.customer .topHead ul:nth-child(even) li:nth-child(odd) a{
+  color:#232323;
+}
+.customer .topHead ul .number {
+  font-size:45px;
+}
+.customer .topHead ul .content {
+  font-size:26px;
+}
+.navbar-nav .topcontent {
+  width:100%;
+  font-size:25px;
+}
+
+.dtatble {
+   max-width: 100%;
+ }
+ 
+ .dtatble table th {
+  background-color: #4e8fb8;
+  color: #fff;
+}
+.dtatble table tr:nth-child(odd) {
+  background-color: #92b0c3;
+  color: #000000;
+}
+.dtatble table tr:nth-child(even) {
+  background-color: #accbde;
+  color: #000000;
+}
+.dtatble table td a {
+  color: #000000;
+}
+.addcounter {
+  max-height: 308px;
+}
+.addcounter .table th a {
+  color: #fff;
+}
+.greenbtn {
+  background-color:green;
+  display: inline-block;
+  border-radius: 3px;
+  padding:5px 13px;
+  color:#fff;
+  font-weight: 500;
+  font-size:16px;
+}
+.dtatble table td .greenbtn {
+  color:#fff;
+}
+li{
+  list-style: none;
+}
+.shopperwrap .shoppermain {
+  width:45%;
+}
+.shopperwrap .donutleftbar {
+  width:50%;
+}
+.shoppermain ul li {
+  font-size:20px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.shoppermain ul li:last-child{
+  margin-bottom: 0px;
+}
+.shoppermain ul .content{
+  background-color: #60abca;
+  color:#fff;
+  text-align:center;
+  padding:8px 13px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.shoppermain ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.progresswrap {
+  width:100%;
+  background-color:orange;
+  height: 35px;
+}
+.progressmain {
+  width:89%;
+  background-color:green;
+  height: 35px;
+  text-align: center;
+  color:#fff;
+}
+.customerdrop{
+  max-width: 150px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+.customer-heading{
+  font-size: 32px;
+  text-align: center;
+  margin-top: 25px;
+  font-weight: bold;
+  color: #4472c4;
+}
+.low {
+  background-color: red;
+  color: #fff;
+}
+.high{
+  background-color: green;
+  color: #fff;
+}
+.medium {
+  background-color: yellow;
+  color: #fff;
+}
+@media (max-width:575px){
+  .shopperwrap .shoppermain {
+    width:100%;
+    
+  }
+  .shopperwrap .donutleftbar {
+    width:100%;
+  }
+  .customer .topHead ul .number {
+    font-size:35px;
+  }
+}

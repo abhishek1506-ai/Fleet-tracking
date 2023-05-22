@@ -1,0 +1,55 @@
+[{
+        "name": "Swanley366",
+        "Month1": "20",
+        "Month2": "31",
+        "Month3": "22",
+        "Month4": "35",
+        "Month5": "16",
+        "Month6": "5"
+    },
+    {
+        "name": "Lewisham",
+        "Month1": "21",
+        "Month2": "16",
+        "Month3": "12",
+        "Month4": "13",
+        "Month5": "7",
+        "Month6": "0"
+    },
+    {
+        "name": "Bexley",
+        "Month1": "21",
+        "Month2": "16",
+        "Month3": "6",
+        "Month4": "6",
+        "Month5": "8",
+        "Month6": "10"
+    },
+    {
+        "name": "Ilford82",
+        "Month1": "55",
+        "Month2": "23",
+        "Month3": "13",
+        "Month4": "11",
+        "Month5": "9",
+        "Month6": "8"
+    },
+    {
+        "name": "Hackney",
+        "Month1": "37",
+        "Month2": "32",
+        "Month3": "25",
+        "Month4": "12",
+        "Month5": "10",
+        "Month6": "5"
+    },
+    {
+        "name": "Dartford",
+        "Month1": "28",
+        "Month2": "23",
+        "Month3": "12",
+        "Month4": "11",
+        "Month5": "10",
+        "Month6": "9"
+    }
+]

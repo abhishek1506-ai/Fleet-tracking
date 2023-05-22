@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Quality Monitoring Solution</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+
+    <link rel="stylesheet" href="../../dist/css/adminlte.css">
+    <link rel="stylesheet" href="../../dist/css/customcss.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav" style="width:100%">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="text-center topcontent"> FLEET TRACKING </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown mr-3">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">5</span>
+                    </a>
+                </li>
+
+                <li class="dropdown user user-menu mr-3">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: rgba(0, 0, 0, 0.5);">
+                        <img src="../../dist/img/user2-160x160.jpg" class="user-image float-none mt-0" alt="User Image">
+                        <span class="hidden-xs">Welcome Matt Prior</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- User image -->
+                        <li class="user-header">
+                            <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                            <p>
+                                Matt Prior
+                            </p>
+                        </li>
+                        <li class="user-footer">
+                            <div class="pull-right float-right">
+                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../../index3.html" class="brand-link  bg-white">
+                <img src="https://d3tj4wnms16o5e.cloudfront.net/s3fs-public/kellton-logo%20%281%29_0_0.png"
+                    alt="AdminLTE Logo" class="brand-image float-none">
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Matt Prior</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fa fa-car"></i>
+                                <p>
+                                    Add Fleet
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-plus nav-icon"></i>
+                                        <p>Add Fleet</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-minus nav-icon"></i>
+                                        <p>Remove Fleet</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-chart-line"></i>
+                                <p>
+                                    Sensors
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-plus nav-icon"></i>
+                                        <p>Connect Device</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-minus nav-icon"></i>
+                                        <p>Disconnect Device</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-times nav-icon"></i>
+                                        <p>Troubleshoot</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-bell"></i>
+                                <p>
+                                    Set Alerts
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Fuel Limit</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Fleet Efficiency</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Driver Safety</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Utilisation</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div class="container-fluid pb-0 content-header fruitsMain">
+                <div class="topHead">
+                    <ul class="d-flex justify-content-xl-between flex-wrap flex-xl-nowrap mt-2 pl-2 mb-0 ">
+
+                        <li>
+                            <p>Trip ID</p>
+                            <p id="tripId">TID256</p>
+                        </li>
+                        <li>
+                            <p>Status</p>
+                            <p id="status">On Time</p>
+                        </li>
+                        <li>
+                            <p>Origin</p>
+                            <p id="origin">Everton</p>
+                        </li>
+                        <li>
+                            <p>Destination</p>
+                            <p id="destination">Lewisham</p>
+                        </li>
+                        <li>
+                            <p>Start Time</p>
+                            <p id="startTime">12:30</p>
+                        </li>
+                        <li>
+                            <p>ETA</p>
+                            <p id="eta">19:00</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 mb-4">
+                            <div class="card" style="height: 100%;">
+                                <div class="carDetails d-flex align-items-center justify-content-around mb-3">
+                                    <div class="car"><i class="fa fa-car" aria-hidden="true"></i></div>
+                                    <div class="details ">
+                                        <div class="d-flex justify-content-between"><span>Fleet ID</span><span
+                                                id="fleetId"></span></div>
+                                        <div class="d-flex justify-content-between"><span>Model</span><span
+                                                id="model">BMW</span></div>
+                                        <div class="d-flex justify-content-between"><span>Number Plate</span><span
+                                                id="numberPlate">UY56U897</span></div>
+                                    </div>
+                                </div>
+                                <div class="carRating d-flex align-items-center justify-content-around mb-3">
+                                    <div>
+                                        <h3>On Time <br>Rating</h3>
+                                        <p id="onTime">97%</p>
+                                    </div>
+                                    <div>
+                                        <h3>Distance <br>Travelled</h3>
+                                        <p id="distance">12345</p>
+                                    </div>
+                                    <div>
+                                        <h3>Fuel <br> Efficiency</h3>
+                                        <p id="fuelEffeciency"> 10.5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-6  mb-4">
+
+                            <div class="card vechicleHealth" style="height: 100%;">
+                                <div class="settext card-header mb-0">Vehicle Health</div>
+                                <div class="row card-body">
+                                    <div class="col-6 text-center">
+                                        <div id="batteryChart" class="gauge"></div>
+                                        <h3 class="settext">Battery status</h3>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <div id="engineChart" class="gauge"></div>
+                                        <h3 class="settext">Engine Temp</h3>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <div id="fuelChart" class="gauge"></div>
+                                        <h3 class="settext">Fuel Status</h3>
+                                    </div>
+                                    <div class="col-6 text-center">
+                                        <div id="tyreChart" class="gauge"></div>
+                                        <h3 class="settext">Tyre Pressure</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="content">
+                <div class="container-fluid pb-5">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card card-body">
+                        <div class="tickets d-flex align-items-center">
+                            <div class="ticket d-flex">
+                                <h4>Open Tickets</h4>
+                                <span>5</span>
+                            </div>
+                            <div class="ticket d-flex">
+                                <h4>Closed Tickets</h4>
+                                <span>18</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card card-body">
+                            <div class="dueservice tickets d-flex align-items-center">
+                                <div class="ticket d-flex">
+                                    <h4>Next Service Due In</h4>
+                                    <span>25 Days</span>
+                                </div>
+                                <div style="flex-grow: 1;">
+                                <button class="createTicket" data-toggle="modal"data-target="#exampleModalCenter">Create Tickets</button>
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1"
+                                aria-labelledby="exampleModalCenterTitle" style="display: none;"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-left">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label>Fleet ID</label>
+                                                    <input id="currentFleetId" type="text" class="form-control"
+                                                       disabled>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Service Required</label>
+                                                    <select class="form-control">
+                                                        <option value="INTERIM CAR SERVICE">INTERIM CAR SERVICE</option>
+                                                        <option value="FULL CAR SERVICE">FULL CAR SERVICE</option>
+                                                        <option value="MAJOR CAR SERVICE">MAJOR CAR SERVICE</option>
+                                                      </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Service Center</label>
+                                                    <select class="form-control">
+                                                        <option value="London">London</option>
+                                                        <option value="Birmingham">Birmingham</option>
+                                                        <option value="Manchester">Manchester</option>
+                                                        <option value="Norwich">Norwich</option>
+                                                        <option value="Luton">Luton</option>
+                                                      </select>
+                                                </div>
+                                                <button type="submit"
+                                                    class="btn btn-primary" onclick="createTicket()">Create</button>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                </div>
+                </div>
+
+                        <div class="col-xl-6">
+                            <div class="card ">
+                                <div class="settext card-header mb-0">Fuel Consumption</div>
+
+                                <div class="fuelConsumption mb-3" style="padding:15px;">
+                                    <div class="d-flex justify-content-end align-items-center">
+                                        <div>
+                                            <select onchange="getFuelConsumption(this.value)" class="cstmSelect lyears  mb-3">
+                                                <option value="lastWeek">last week</option>
+                                                <option value="lastMonth">last month</option>
+                                                <option value="lastYear">last year</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <canvas id="fuelConsumptionChart"
+                                            style="min-height: 190px; height: 190px; max-height: 190px; max-width: 100%;"></canvas>
+                                </div>
+                                <div class="distance">
+                                    <div class="settext card-header mb-0">Distance Travelled</div>
+                                    <div style="padding:15px;">
+                                    <div class="d-flex justify-content-end align-items-center">
+                                       
+                                        <div>
+                                            <select onchange="getDistanceTravelled(this.value)" class="cstmSelect lyears mb-3">
+                                                <option value="lastWeek">last week</option>
+                                                <option value="lastMonth">last month</option>
+                                                <option value="lastYear">last year</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <canvas id="distanceTravelledChart"
+                                            style="min-height: 190px; height: 190px; max-height: 190px; max-width: 100%;"></canvas>
+                                        </div>
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6">
+                            <div class="card driverDetails " style="padding:15px;">
+                              
+                                <div
+                                    class=" carDetails d-flex align-items-center flex-wrap flex-sm-nowrap mb-1 border-0">
+                                    <div class="car mr-3"><i class="fa fa-user" aria-hidden="true"></i></div>
+                                    <div class="details ">
+                                        <div class="d-flex justify-content-between"><span>Name :</span><span id="name"></span>
+                                        </div>
+                                        <div class="d-flex justify-content-between"><span>Driver ID
+                                                :</span><span id="driverId"></span></div>
+                                        <div class="d-flex justify-content-between"><span>Contact :</span><span id="contact"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class=" carDetails d-flex flex-wrap flex-sm-nowrap align-items-center  border-0 mb-3">
+                                    <div class="text-center" style="font-size:18px;margin-right: 10px; color: #737373;">
+                                        <div class="cstmcircle mr-4" id="rating"></div>Driver Rating
+                                    </div>
+                                    <div class="details ">
+                                        <div class="d-flex justify-content-between flex-wrap flex-xl-nowrap">
+                                            <span>Acceleration :</span><span id="acceleration"></span>
+                                        </div>
+                                        <div class="d-flex justify-content-between flex-wrap flex-xl-nowrap"><span>Over
+                                                Speeding :</span><span id="speeding"></span></div>
+                                        <div class="d-flex justify-content-between flex-wrap flex-xl-nowrap"><span>Harsh
+                                                Breaking :</span><span id="breaking"></span></div>
+                                        <div class="d-flex justify-content-between flex-wrap flex-xl-nowrap"><span>No.
+                                                Of Trips :</span><span id="trips"></span></div>
+                                    </div>
+                                </div>
+                                <a href="javascript:void()" class="mydashboard" onclick="goToPreviousPage()">MY DASHBOARD</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+    </div>
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Add Content Here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    </div>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <script src="../raphael-2.1.4.min.js"></script>
+    <script src="../justgage.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="../../plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+    <script src="../../dist/js/tripFleet.js"></script>
+    <script>
+        console.log(sessionStorage.getItem('fleetId'));
+    </script>
+</body>
+
+</html>
